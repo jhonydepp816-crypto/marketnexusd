@@ -1,0 +1,123 @@
+/* ───────────── Strategy ───────────── */
+.strategy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 22px;
+}
+.strategy-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.strategy-card:hover,
+.strategy-card.is-open {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: 0 10px 34px rgba(123, 22, 255, 0.18);
+}
+.strategy-trigger {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 18px;
+  text-align: left;
+  background: transparent;
+  border: 0;
+}
+.strategy-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  color: var(--violet);
+  background: radial-gradient(circle, rgba(157, 37, 255, 0.28), rgba(16, 9, 26, 0.6) 70%);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 0 18px rgba(123, 22, 255, 0.4), inset 0 0 12px rgba(157, 37, 255, 0.25);
+}
+.strategy-num {
+  flex: none;
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgba(244, 241, 250, 0.35);
+}
+.strategy-text {
+  flex: 1;
+  min-width: 0;
+}
+.strategy-title,
+.strategy-desc {
+  display: block;
+}
+.strategy-title {
+  font-family: var(--font-head);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.strategy-desc {
+  margin-top: 2px;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.strategy-arrow {
+  flex: none;
+  color: var(--muted);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.strategy-card:hover .strategy-arrow {
+  color: var(--violet);
+}
+.strategy-card.is-open .strategy-arrow {
+  transform: rotate(90deg);
+  color: var(--violet);
+}
+.strategy-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+.strategy-card.is-open .strategy-panel {
+  grid-template-rows: 1fr;
+}
+.strategy-panel-inner {
+  overflow: hidden;
+}
+.strategy-panel ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 18px 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(157, 37, 255, 0.18);
+}
+.strategy-panel li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.82rem;
+  color: rgba(244, 241, 250, 0.85);
+}
+.strategy-panel li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--violet);
+  box-shadow: 0 0 8px var(--glow);
+}
+
+@media (max-width: 420px) {
+  .strategy-num {
+    display: none;
+  }
+  .strategy-trigger {
+    gap: 12px;
+    padding: 14px;
+  }
+}

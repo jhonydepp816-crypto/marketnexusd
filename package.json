@@ -1,0 +1,23 @@
+{
+  "name": "marketnexus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MarketΛNexus — trader portfolio website (React + Vite)",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.3.0"
+  }
+}

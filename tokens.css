@@ -1,0 +1,23 @@
+/* ───────────── Design tokens ───────────── */
+:root {
+  --bg: #050309;
+  --bg-2: #10091a;
+  --bg-card: rgba(16, 9, 26, 0.72);
+  --purple: #9d25ff;
+  --violet: #c04dff;
+  --glow: #7b16ff;
+  --text: #f4f1fa;
+  --muted: #aaa2ba;
+  --gold: #d6b36a;
+  --positive: #5fe3a8;
+  --negative: #ff6f93;
+  --border: rgba(157, 37, 255, 0.28);
+  --border-strong: rgba(192, 77, 255, 0.7);
+  --radius-sm: 10px;
+  --radius: 14px;
+  --radius-lg: 18px;
+  --nav-h: 72px;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-head: 'Montserrat', 'Inter', system-ui, sans-serif;
+  --metal: linear-gradient(180deg, #ffffff 0%, #e4dff0 45%, #9f97b3 100%);
+}

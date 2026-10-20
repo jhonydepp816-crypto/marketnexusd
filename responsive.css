@@ -1,0 +1,9 @@
+/* ───────────── Global responsive overrides (must stay last) ───────────── */
+@media (max-width: 640px) {
+  .container {
+    padding-inline: 18px;
+  }
+  .hero-logo {
+    filter: none;
+  }
+}

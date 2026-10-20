@@ -1,0 +1,23 @@
+/* ───────────── Dashboard layout ───────────── */
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
+  grid-template-areas:
+    'perf strat'
+    'journal about';
+  gap: 64px 40px;
+  padding-block: 72px 24px;
+}
+.area-perf { grid-area: perf; }
+.area-strat { grid-area: strat; }
+.area-journal { grid-area: journal; }
+.area-about { grid-area: about; }
+
+@media (max-width: 1080px) {
+  .dashboard {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'perf' 'strat' 'journal' 'about';
+    gap: 56px;
+    padding-block: 56px 16px;
+  }
+}
